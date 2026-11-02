@@ -210,3 +210,6 @@ main { max-width: var(--wrap); margin: 0 auto; padding: 0 var(--gut); }
 
 /* очень узкие экраны: название не режется, кнопка из шапки уходит (запись есть внизу и в первом экране) */
 @media (max-width: 300px) { .s-bar__brand { overflow: visible; font-size: .88rem; } .s-bar .s-btn--sm { display: none; } }
+
+/* телефон: фон без руки с размытой деталью, только шина и станок */
+@media (max-width: 640px) { .s-bgsteps { background-image: linear-gradient(rgba(10,8,6,.15) 0%, rgba(10,8,6,.35) 30%, rgba(10,8,6,.7) 60%, rgba(10,8,6,.85) 100%), url(assets/hands-bg-m.webp); background-position: 22% 30%; } }
