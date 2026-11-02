@@ -207,3 +207,6 @@ main { max-width: var(--wrap); margin: 0 auto; padding: 0 var(--gut); }
 @media (max-width: 640px) { .s-bgsteps { padding: 230px 16px 28px; } }
 .s-bgsteps .s-steps__item { background: rgba(14,10,7,.55); -webkit-backdrop-filter: blur(3px); backdrop-filter: blur(3px); }
 .s-bgsteps h2, .s-bgsteps h3, .s-bgsteps p { text-shadow: 0 1px 8px rgba(0,0,0,.7); }
+
+/* очень узкие экраны: название не режется, кнопка из шапки уходит (запись есть внизу и в первом экране) */
+@media (max-width: 300px) { .s-bar__brand { overflow: visible; font-size: .88rem; } .s-bar .s-btn--sm { display: none; } }
