@@ -213,3 +213,6 @@ main { max-width: var(--wrap); margin: 0 auto; padding: 0 var(--gut); }
 
 /* телефон: фон без руки с размытой деталью, только шина и станок */
 @media (max-width: 900px), (pointer: coarse) { .s-bgsteps { background: none; padding: 8px 0 0; margin-top: 24px; border-radius: 0; } .s-bgsteps .s-steps__item { background: var(--c-surface, #181310); -webkit-backdrop-filter: none; backdrop-filter: none; } .s-bgsteps h2, .s-bgsteps h3, .s-bgsteps p { text-shadow: none; } }
+
+/* заголовки шагов: слова целиком, переносы только между словами */
+.s-steps h3 { hyphens: none; -webkit-hyphens: none; overflow-wrap: break-word; word-break: normal; text-wrap: balance; font-size: clamp(.95rem, 1.5vw, 1.08rem); }
